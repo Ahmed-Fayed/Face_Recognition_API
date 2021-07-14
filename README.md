@@ -1,2 +1,2 @@
 # Face_Recognition_API
-Face Recognition using facenet and flask
+Face Recognition API using keras-facenet , flask and Python
