@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="static/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <div class='cont'>
+                
+            
+            {% if data[0] > 0.01 %}
+            <h1>I See Non Covid-19 CT</h1>
+            
+            {%else%}
+            <h1> I See  Covid-19 CT </h1>
+            
+            {%endif%}
+
+        </div>
+            <!--h1>acc<br> Covid: <span>{{data[0]}}</span> <br>NonCovid: <span>{{data[0]}}</span><br> </h1-->
+            
+            <img src="{{url_for('load_img')}}" alt='img'>
+            <a href="/" class='btn'>go back</a>
+
+        </center>
+        
+    </body>
+</html>
